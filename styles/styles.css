@@ -4,14 +4,16 @@ font-family: 'Source Sans Pro', sans-serif;*/
 :root {
   --primary-font: "Poppins", sans-serif;
   --heading-font: "Playfair Display", serif;
-  --branding-color: #7fa99b;
-  --secondary-color: #fbf2d5;
+  --branding-color: #a1eacd;
+  --secondary-color: #1c2273;
+  --heading-color: #312a2b;
 }
 
 .hero {
   text-align: left;
   background-color: var(--branding-color);
   padding: 100px 0 80px;
+  color: var(--heading-color);
 }
 .hero p {
   font-family: var(--primary-font);
@@ -35,6 +37,7 @@ font-family: 'Source Sans Pro', sans-serif;*/
 .first-project {
   text-align: left;
   margin: 0 20px 0 0;
+  color: var(--heading-color);
 }
 
 .first-project h2 {
@@ -56,6 +59,7 @@ font-family: 'Source Sans Pro', sans-serif;*/
 .second-project {
   text-align: right;
   margin: 20px 0;
+  color: var(--heading-color);
 }
 .second-project h2 {
   font-family: var(--heading-font);
@@ -76,7 +80,7 @@ font-family: 'Source Sans Pro', sans-serif;*/
 
 #btn-contact-me {
   background-color: var(--secondary-color);
-  color: black;
+  color: var(--branding-color);
   border-color: var(--secondary-color);
   font-size: 18px;
   padding: 15px 30px;
@@ -84,8 +88,8 @@ font-family: 'Source Sans Pro', sans-serif;*/
 #btn-weather-app,
 #btn-adopt-app {
   background-color: fffff;
-  color: var(--branding-color);
-  border-color: var(--branding-color);
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
   font-size: 16px;
   padding: 15px 20px;
 }
