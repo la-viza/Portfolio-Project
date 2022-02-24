@@ -11,7 +11,7 @@ font-family: 'Source Sans Pro', sans-serif;*/
 .hero {
   text-align: left;
   background-color: var(--branding-color);
-  padding: 100px;
+  padding: 100px 0 80px;
 }
 .hero p {
   font-family: var(--primary-font);
@@ -28,15 +28,38 @@ font-family: 'Source Sans Pro', sans-serif;*/
   font-weight: normal;
 }
 
-.btn-branding {
+.luiza {
+  width: 400px;
+  height: auto;
+}
+
+.projects h2 {
+  font-family: var(--heading-font);
+  font-size: 50px;
+}
+
+.projects h3 {
+  font-family: var(--primary-font);
+  font-size: 20px;
+  font-weight: normal;
+}
+.projects p {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: normal;
+}
+
+#btn-contact-me {
   background-color: var(--secondary-color);
   color: black;
   border-color: var(--secondary-color);
   font-size: 18px;
   padding: 15px 30px;
 }
-
-.luiza {
-  width: 400px;
-  height: auto;
+#btn-weather-app {
+  background-color: fffff;
+  color: var(--branding-color);
+  border-color: var(--branding-color);
+  font-size: 16px;
+  padding: 15px 20px;
 }
