@@ -114,8 +114,8 @@
 
 @media (max-width: 900px) {
   .hero {
-    justify-content: center;
-    text-align: center;
+    justify-content: center !important;
+    text-align: center !important;
     padding: 40px 0 25px 0;
   }
   .luiza {
