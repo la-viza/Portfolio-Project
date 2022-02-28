@@ -233,7 +233,7 @@ h3 {
     max-width: 50%;
   }
   .about-me-image {
-    max-width: 70%;
-    margin: auto;
+    max-width: 60%;
+    margin: 45px;
   }
 }
