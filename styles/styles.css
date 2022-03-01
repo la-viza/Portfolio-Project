@@ -164,7 +164,7 @@ p {
   margin-top: 60px;
 }
 
-@media (max-width: 912px) {
+@media (max-width: 915px) {
   header {
     padding: 40px !important;
     background-color: var(--branding-color);
@@ -186,10 +186,9 @@ p {
     padding: 40px 0 25px 0;
   }
   .luiza {
-    max-width: 50%;
+    max-width: 35%;
     height: auto;
-    display: block;
-    margin: 0 0 10px 90px;
+    text-align: center;
   }
   .hero p {
     font-size: 20px;
@@ -269,6 +268,13 @@ p {
   .about-me-image {
     max-width: 60%;
     margin: 45px;
+  }
+
+  #img-adopt-app {
+    max-width: 90%;
+    height: auto;
+    margin: -47px 0px 50px 0px;
+    border-radius: 4px;
   }
   #img-work-weather {
     max-width: 82%;
