@@ -180,6 +180,9 @@ p {
     margin-top: -15px;
     font-size: 22px;
   }
+  h6 {
+    font-size: 12px;
+  }
   .hero {
     justify-content: center !important;
     text-align: center !important;
