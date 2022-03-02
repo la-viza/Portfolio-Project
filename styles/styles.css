@@ -51,6 +51,18 @@ p {
   font-size: 16px;
   font-weight: normal;
 }
+span {
+  display: flex;
+  justify-content: center;
+}
+a {
+  color: var(--heading-color);
+  text-decoration: none;
+  cursor: default;
+}
+a :hover {
+  color: var(--secondary-color);
+}
 
 .hero {
   margin: 0 -13px;
@@ -86,6 +98,10 @@ p {
   text-align: right;
   margin: 0;
   color: var(--heading-color);
+}
+.contact-icons {
+  font-size: 25px;
+  margin: 15px;
 }
 
 #btn-contact-me,
@@ -141,6 +157,10 @@ p {
   margin: 13px -10px 40px -83px;
   border-radius: 4px;
 }
+#img-portrait-icon {
+  max-width: 35%;
+  margin-top: -47px;
+}
 #adopt-section {
   padding: 0 105px 0 0;
 }
@@ -158,10 +178,29 @@ p {
 .content-container h2 {
   font-size: 22px;
 }
+.contact-container h1 {
+  font-size: 50px;
+}
 .about-me-image {
   max-width: 70%;
   margin-left: 50px;
   margin-top: 60px;
+}
+.box {
+  max-width: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding-top: 80px;
+  color: var(--heading-color);
+  border-color: var(--heading-color) !important;
+}
+
+#email-contact :hover {
+  color: var(--secondary-color);
+  text-decoration: none;
 }
 
 @media (max-width: 915px) {
@@ -176,9 +215,12 @@ p {
   header h3 {
     font-size: 19px;
   }
+  h3 {
+    font-size: 17px;
+  }
   h4 {
     margin-top: -15px;
-    font-size: 22px;
+    font-size: 20px;
   }
   h6 {
     font-size: 12px;
@@ -240,6 +282,9 @@ p {
     font-size: 25px;
     margin-top: -15px !important;
   }
+  .find-me {
+    margin-top: 15px !important;
+  }
   #adopt-section {
     padding: 0 !important;
   }
@@ -259,9 +304,33 @@ p {
     padding: 0 !important;
     margin-left: 29px;
   }
+  .contact-container h1 {
+    font-size: 35px;
+    padding: 0 !important;
+    margin-bottom: 35px !important;
+  }
+  .contact-container {
+    margin-top: 100px;
+    text-align: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
   .content-container h2 {
     font-size: 14px;
   }
+  .box {
+    max-width: 320px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-top: 80px;
+  }
+
   #btn-contact-me-about {
     display: block;
     margin: -20px auto;
@@ -291,5 +360,8 @@ p {
     height: auto;
     margin: 30px 0 28px;
     border-radius: 4px;
+  }
+  #email-contact {
+    font-size: 10px !important;
   }
 }
