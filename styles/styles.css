@@ -5,6 +5,7 @@
   --secondary-color: #b24a5f;
   --heading-color: #312a2b;
   --contact-btn-color: #92253f;
+  --contact-links-color: #876464;
 }
 header {
   padding: 65px !important;
@@ -102,6 +103,7 @@ a :hover {
 .contact-icons {
   font-size: 25px;
   margin: 15px;
+  color: var(--contact-links-color);
 }
 
 #btn-contact-me,
@@ -196,6 +198,9 @@ a :hover {
   padding-top: 80px;
   color: var(--heading-color);
   border-color: var(--heading-color) !important;
+}
+#email-contact a {
+  color: var(--contact-links-color);
 }
 
 #email-contact :hover {
