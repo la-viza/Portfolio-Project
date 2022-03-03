@@ -56,14 +56,6 @@ span {
   display: flex;
   justify-content: center;
 }
-.email-me a {
-  color: var(--heading-color);
-  text-decoration: none;
-  cursor: default;
-}
-.email-me a :hover {
-  color: var(--secondary-color);
-}
 
 nav {
   padding: 10px 0;
@@ -92,7 +84,7 @@ nav li.active a {
   margin: 0 -13px;
   text-align: left;
   background-color: var(--branding-color);
-  padding: 100px 0 80px;
+  padding: 100px 0 70px;
   color: var(--heading-color);
 }
 .hero p {
@@ -128,7 +120,14 @@ nav li.active a {
   margin: 15px;
   color: var(--contact-links-color);
 }
-
+.email-me a {
+  color: var(--heading-color);
+  text-decoration: none;
+  cursor: default;
+}
+.email-me a :hover {
+  color: var(--secondary-color);
+}
 #btn-contact-me,
 #btn-contact-me-about {
   background-color: var(--contact-btn-color);
