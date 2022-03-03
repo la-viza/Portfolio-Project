@@ -258,6 +258,9 @@ a :hover {
   color: var(--branding-color);
   background-color: var(--contact-btn-color);
 }
+.email-footer h4 {
+  color: var(--heading-color);
+}
 
 @media (max-width: 915px) {
   header {
