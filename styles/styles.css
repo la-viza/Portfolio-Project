@@ -136,7 +136,7 @@ footer a {
 a {
   color: var(--heading-color);
   text-decoration: none;
-  cursor: default;
+  cursor: pointer;
 }
 a :hover {
   color: var(--secondary-color);
