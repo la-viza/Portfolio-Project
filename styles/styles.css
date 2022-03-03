@@ -77,11 +77,20 @@ nav a {
   transition: all 100ms ease-in-out;
 }
 nav a:hover,
-nav li.active a {
+nav li.active a,
+footer a:hover {
   color: var(--secondary-color);
 }
 footer {
-  margin: 20px;
+  padding: 40px;
+  font-family: var(--primary-font);
+  color: var(--heading-color);
+  font-size: 12px;
+  line-height: 1.5;
+}
+footer a {
+  color: var(--contact-links-color);
+  text-decoration: underline;
 }
 
 .hero {
