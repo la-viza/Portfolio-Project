@@ -56,15 +56,38 @@ span {
   display: flex;
   justify-content: center;
 }
-a {
+.email-me a {
   color: var(--heading-color);
   text-decoration: none;
   cursor: default;
 }
-a :hover {
+.email-me a :hover {
   color: var(--secondary-color);
 }
 
+nav {
+  padding: 10px 0;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 17px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--heading-color);
+  transition: all 100ms ease-in-out;
+}
+nav a:hover,
+nav li.active a {
+  color: var(--secondary-color);
+}
 .hero {
   margin: 0 -13px;
   text-align: left;
@@ -230,6 +253,17 @@ a :hover {
   h6 {
     font-size: 12px;
   }
+  nav ul {
+    margin-right: 8px;
+  }
+  nav li {
+    margin-left: 7px;
+    line-height: 30px;
+  }
+  nav a {
+    font-size: 12px;
+  }
+
   .hero {
     justify-content: center !important;
     text-align: center !important;
