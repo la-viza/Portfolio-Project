@@ -80,6 +80,10 @@ nav a:hover,
 nav li.active a {
   color: var(--secondary-color);
 }
+footer {
+  margin: 20px;
+}
+
 .hero {
   margin: 0 -13px;
   text-align: left;
@@ -120,12 +124,12 @@ nav li.active a {
   margin: 15px;
   color: var(--contact-links-color);
 }
-.email-me a {
+a {
   color: var(--heading-color);
   text-decoration: none;
   cursor: default;
 }
-.email-me a :hover {
+a :hover {
   color: var(--secondary-color);
 }
 #btn-contact-me,
@@ -223,11 +227,27 @@ nav li.active a {
 }
 #email-contact a {
   color: var(--contact-links-color);
+  display: flex;
+  flex-direction: column;
 }
 
 #email-contact :hover {
   color: var(--secondary-color);
   text-decoration: none;
+}
+
+.social-links-footer a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  background: var(--secondary-color);
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 50%;
+  transition: all 100ms ease-in-out;
+}
+.social-links-footer :hover {
+  color: var(--branding-color);
+  background-color: var(--contact-btn-color);
 }
 
 @media (max-width: 915px) {
@@ -380,6 +400,12 @@ nav li.active a {
     margin: 45px;
   }
 
+  .social-links-footer a {
+    margin: -17px 14px 17px !important;
+    padding: 10px 15px !important;
+    font-size: 15px !important;
+  }
+
   #img-adopt-app {
     max-width: 90%;
     height: auto;
@@ -401,5 +427,8 @@ nav li.active a {
   }
   #email-contact {
     font-size: 10px !important;
+  }
+  .email-footer h4 {
+    margin-top: 5px !important;
   }
 }
