@@ -32,6 +32,16 @@
     <title>About me – Luiza Moshkin</title>
   </head>
   <body>
+    <div class="container">
+      <nav class="d-flex justify-content-end">
+        <ul>
+          <li><a href="/"> Home</a></li>
+          <li class="active"><a href="/about.html"> About</a></li>
+          <li><a href="/work.html"> Work </a></li>
+          <li><a href="/contact.html"> Contact </a></li>
+        </ul>
+      </nav>
+    </div>
     <header>
       <h3>About Me</h3>
     </header>
@@ -39,7 +49,7 @@
       <div class="row">
         <div class="col-md">
           <h1>I'm Luiza Moshkin –</h1>
-          <h2 class="mt-4 mb-4">A frontend developer from Toronto, Canada</h2>
+          <h2 class="mt-4 mb-4">A front-end developer from Toronto, Canada</h2>
           <p class="mb-5 text-muted">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus
@@ -51,7 +61,6 @@
           >
         </div>
 
-        
         <div class="col-lg mb-5">
           <img
             src="/images/Luiza Moshkin – about.jpg"
@@ -60,6 +69,51 @@
           />
         </div>
       </div>
+      <div class="flex text-center mt-5 mb-5 d-none d-sm-block">
+        <div class="work-inquiry">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h5>Work Inquiry</h5>
+              </div>
+
+              <div class="col-md-6">
+                <a href="#" class="btn btn-branding" id="btn-work-inquiry"
+                  >Contact me</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="email-footer text-center justify-content-center">
+        <h4 class="mt-5 mb-3">Let's get in touch!</h4>
+
+        <p id="email-contact">
+          <a href="mailto:luiza.moshkin@gmail.com">luiza.moshkin@gmail.com</a>
+        </p>
+      </div>
+
+      <div class="social-links-footer d-flex justify-content-center mt-5">
+        <a href="https://github.com/la-viza" target="_blank"
+          ><i class="fab fa-github" id="footer-icons"></i
+        ></a>
+
+        <a
+          href="https://www.linkedin.com/in/luiza-moshkin-3024b9229/"
+          target="_blank"
+          ><i class="fab fa-linkedin-in" id="footer-icons"></i
+        ></a>
+
+        <a href=" https://www.instagram.com/la_viza/" target="_blank"
+          ><i class="fab fa-instagram" id="footer-icons"></i
+        ></a>
+      </div>
+      <footer class="footer mt-3 mb-3 text-center">
+        This project was coded by Luiza Moshkin and is
+        <a href="https://github.com/la-viza/Portfolio-Project">open-sourced</a>
+      </footer>
     </div>
   </body>
 </html>

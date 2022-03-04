@@ -39,6 +39,12 @@ h4 {
   font-size: 25px;
   font-weight: normal;
 }
+h5 {
+  font-family: var(--primary-font);
+  font-size: 30px;
+  color: var(--heading-color);
+  margin: 7px 0 0 70px;
+}
 
 h6 {
   font-family: var(--primary-font);
@@ -201,6 +207,16 @@ a :hover {
 #adopt-section {
   padding: 0 105px 0 0;
 }
+#btn-work-inquiry {
+  background-color: var(--contact-btn-color);
+  color: var(--branding-color);
+  border-color: var(--contact-btn-color);
+  opacity: 85%;
+  font-size: 16px;
+  border: 12px 30px !important;
+  padding: 12px 25px;
+  margin-right: 70px;
+}
 
 .content-container {
   justify-content: space-evenly;
@@ -262,6 +278,16 @@ a :hover {
   color: var(--heading-color);
 }
 
+.work-inquiry {
+  display: block;
+  margin: 0 100px 90px;
+  background-color: var(--branding-color);
+  color: var(--heading-color);
+  padding: 40px 0;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
 @media (max-width: 915px) {
   header {
     padding: 40px !important;
@@ -280,6 +306,12 @@ a :hover {
   h4 {
     margin-top: -15px;
     font-size: 20px;
+  }
+  h5 {
+    font-family: var(--primary-font);
+    font-size: 20px;
+    color: var(--heading-color);
+    margin: 14px;
   }
   h6 {
     font-size: 12px;
@@ -374,7 +406,7 @@ a :hover {
     text-align: center;
   }
   .content-container h1 {
-    font-size: 23px;
+    font-size: 21px;
     padding: 0 !important;
     margin-left: 29px;
   }
@@ -446,5 +478,8 @@ a :hover {
   }
   .email-footer h4 {
     margin-top: 5px !important;
+  }
+  .work-inquiry {
+    border-radius: 7px;
   }
 }
