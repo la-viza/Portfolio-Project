@@ -143,6 +143,7 @@ a {
   color: var(--heading-color);
   text-decoration: none;
   cursor: pointer;
+  transition: all 100ms ease-in-out;
 }
 a :hover {
   color: var(--secondary-color);
@@ -156,6 +157,14 @@ a :hover {
   font-size: 18px;
   padding: 15px 30px;
 }
+
+#btn-contact-me:hover,
+#btn-contact-me-about:hover {
+  border: solid 1px var(--branding-color);
+  opacity: 100%;
+  transition: all 100ms ease-in-out;
+}
+
 #btn-weather-app,
 #btn-adopt-app {
   background-color: fffff;
@@ -163,6 +172,13 @@ a :hover {
   border-color: var(--secondary-color);
   font-size: 16px;
   padding: 15px 20px;
+}
+
+#btn-weather-app:hover,
+#btn-adopt-app:hover {
+  color: var(--contact-btn-color);
+  border: solid 1.2px var(--contact-btn-color);
+  transition: all 100ms ease-in-out;
 }
 
 #btn-launch-project {
@@ -173,6 +189,13 @@ a :hover {
   font-size: 14px;
   padding: 13px 15px;
 }
+
+#btn-launch-project:hover {
+  border: solid 1px var(--branding-color);
+  opacity: 100%;
+  transition: all 100ms ease-in-out;
+}
+
 #img-weather-app {
   max-width: 80%;
   height: auto;
@@ -216,6 +239,12 @@ a :hover {
   border: 12px 30px !important;
   padding: 12px 25px;
   margin-right: 70px;
+}
+
+#btn-work-inquiry:hover {
+  border: solid 1px var(--branding-color);
+  opacity: 100%;
+  transition: all 100ms ease-in-out;
 }
 
 .content-container {
@@ -316,6 +345,7 @@ a :hover {
   h6 {
     font-size: 12px;
   }
+
   nav ul {
     margin-right: 8px;
   }
