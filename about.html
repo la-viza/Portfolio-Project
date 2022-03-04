@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Luiza Moshkin is a front-end developer from Toronto, Canada. She is an aspiring software engineer who can work remotely."
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,10 +39,14 @@
     <div class="container">
       <nav class="d-flex justify-content-end">
         <ul>
-          <li><a href="/"> Home</a></li>
-          <li class="active"><a href="/about.html"> About</a></li>
-          <li><a href="/work.html"> Work </a></li>
-          <li><a href="/contact.html"> Contact </a></li>
+          <li><a href="/" title="Homepage"> Home</a></li>
+          <li class="active" title="About Luiza">
+            <a href="/about.html"> About</a>
+          </li>
+          <li><a href="/work.html" title="Luiza's Work"> Work </a></li>
+          <li>
+            <a href="/contact.html" title="Luiza's Contact Info"> Contact </a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -56,7 +64,11 @@
             eget nunc scelerisque viverra mauris in aliquam sem fringilla. Enim
             nec dui nunc mattis enim ut tellus.
           </p>
-          <a href="#" class="btn btn-branding" id="btn-contact-me-about"
+          <a
+            href="/work.html"
+            class="btn btn-branding"
+            id="btn-contact-me-about"
+            title="See Projects"
             >See my projects</a
           >
         </div>
@@ -65,7 +77,7 @@
           <img
             src="/images/Luiza Moshkin – about.jpg"
             class="img-fluid rounded about-me-image"
-            alt=""
+            alt="Luiza Moshkin - profile picture"
           />
         </div>
       </div>
@@ -78,7 +90,10 @@
               </div>
 
               <div class="col-md-6">
-                <a href="#" class="btn btn-branding" id="btn-work-inquiry"
+                <a
+                  href="/contact.html"
+                  class="btn btn-branding"
+                  id="btn-work-inquiry"
                   >Contact me</a
                 >
               </div>
