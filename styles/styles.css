@@ -217,19 +217,27 @@ a :hover {
   border-radius: 4px;
 }
 
+#img-work-bishkek {
+  max-width: 87%;
+  height: 61%;
+  margin: 10px 0 34px;
+  border-radius: 4px;
+}
+
 #img-work-weather {
   max-width: 82%;
   height: auto;
-  margin: 8px 0 28px;
+  margin: 8px 0 25px;
   border-radius: 4px;
 }
 
 #img-work-adopt {
   max-width: 82%;
   height: auto;
-  margin: 13px -10px 40px -83px;
+  margin: 13px -10px 30px -83px;
   border-radius: 4px;
 }
+
 #img-portrait-icon {
   max-width: 35%;
   margin-top: -47px;
