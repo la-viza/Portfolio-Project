@@ -130,11 +130,29 @@ footer a {
   font-weight: normal;
   font-size: 30px;
 }
+.rotate {
+  transition: 1s ease;
+}
+
+.rotate:hover {
+  -webkit-transform: rotateZ(-3deg);
+  -ms-transform: rotateZ(-3deg);
+  transform: rotateZ(-3deg);
+  transition: 1s ease;
+}
 
 .luiza {
   width: 400px;
   height: auto;
+  transition: 1s ease;
 }
+.luiza:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s ease;
+}
+
 .first-project {
   text-align: left;
   margin: auto;
@@ -146,11 +164,23 @@ footer a {
   margin: 0;
   color: var(--heading-color);
 }
+.grow {
+  transition: 1s ease;
+  cursor: pointer;
+}
+.grow:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s ease;
+}
+
 .contact-icons {
   font-size: 25px;
   margin: 15px;
   color: var(--contact-links-color);
 }
+
 a {
   color: var(--heading-color);
   text-decoration: none;
@@ -256,6 +286,17 @@ a :hover {
   margin-left: 100px;
 }
 
+.brighten {
+  -webkit-filter: brightness(50%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.brighten:hover {
+  -webkit-filter: brightness(100%);
+}
 #img-work-adopt {
   max-width: 82%;
   height: auto;
@@ -311,7 +352,18 @@ a :hover {
   max-width: 70%;
   margin-left: 50px;
   margin-top: 60px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 1s ease;
 }
+.about-me-image:hover {
+  filter: grayscale(0%);
+  filter: gray;
+  -webkit-filter: grayscale(0%);
+  filter: none;
+  transition: 1s ease;
+}
+
 .box {
   max-width: 500px;
   height: auto;
