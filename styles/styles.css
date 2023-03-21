@@ -38,18 +38,24 @@ h3 {
   font-family: var(--primary-font);
   font-size: 30px;
   text-align: center;
+  color: var(--branding-color);
+  text-transform: uppercase;
+  margin: 30px 0 50px;
 }
 
 h2 {
-  font-family: var(--heading-font);
-  font-size: 30px;
+  font-family: var(--primary-font);
+  font-size: 35px;
   line-height: 1.6;
+  font-weight: 400;
 }
 
 h4 {
   font-family: var(--heading-font);
+  color: var(--secondary-color);
   font-size: 25px;
   font-weight: normal;
+  margin-top: 15px;
 }
 h5 {
   font-family: var(--primary-font);
@@ -64,12 +70,15 @@ h6 {
   font-weight: normal;
 }
 
-p {
+.about__content-title {
   font-family: var(--primary-font);
+  font-size: 30px;
+  text-align: center;
   color: var(--heading-color);
-  font-size: 16px;
-  font-weight: normal;
+  margin: 30px 0 50px;
+  text-transform: uppercase;
 }
+
 span {
   display: flex;
   justify-content: center;
@@ -126,8 +135,8 @@ footer a {
   color: var(--heading-color);
 }
 .hero p {
-  font-family: var(--heading-font) !important;
-  font-size: 25px;
+  font-family: var(--primary-font) !important;
+  font-size: 30px;
   line-height: 1;
   color: var(--heading-color) !important;
   opacity: 95%;
@@ -196,10 +205,18 @@ h2 .typing {
   cursor: pointer;
 }
 .grow:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
   transition: 1s ease;
+}
+
+.text-muted {
+  color: var(--contact-links-color) !important;
+}
+
+.project-cards {
+  justify-content: space-around;
 }
 
 .contact-icons {
@@ -210,6 +227,23 @@ h2 .typing {
 
 .border {
   border: 2px solid var(--contact-links-color) !important;
+}
+
+.skills {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.skills__skill {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  font-size: 12px;
+  border: 1px solid #ef00e3a8;
+  box-shadow: 0 0 5px #ef00e3a8, 0 0 5px #ef00e3a8 inset;
+  color: var(--contact-links-color);
+  border-radius: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 a {
@@ -277,32 +311,32 @@ a :hover {
 }
 
 #btn-launch-project {
-  background-color: var(--contact-btn-color);
-  color: var(--branding-color);
-  border-color: var(--contact-btn-color);
+  background-color: var(--branding-color);
+  color: var(--heading-color);
+  border-color: var(--branding-color);
   opacity: 85%;
   font-size: 14px;
-  padding: 13px 15px;
+  padding: 0.7rem 3rem;
+  text-transform: uppercase;
 }
 
 #btn-launch-project:hover {
   border: solid 1px var(--branding-color);
-  opacity: 100%;
+  opacity: 95%;
   transition: all 100ms ease-in-out;
+  color: #ef00e3a8;
 }
 
 #img-bishkek-app {
   max-width: 77%;
   height: 103%;
   margin: 8px 90px 28px;
-
   border-radius: 4px;
 }
 
 #img-weather-app {
-  max-width: 80%;
-  height: auto;
-  margin: 8px 83px 28px;
+  max-width: 100%;
+  max-height: 100%;
   border-radius: 4px;
 }
 
@@ -313,17 +347,9 @@ a :hover {
   border-radius: 4px;
 }
 
-#img-work-bishkek {
+#img-project {
   max-width: 87%;
   height: 66%;
-  border-radius: 4px;
-}
-
-#img-work-weather {
-  max-width: 90% !important;
-  height: 67%;
-  margin: 0;
-  padding: 0;
   border-radius: 4px;
 }
 
@@ -332,7 +358,7 @@ a :hover {
 }
 
 .brighten {
-  -webkit-filter: brightness(50%);
+  -webkit-filter: brightness(60%);
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
@@ -341,12 +367,6 @@ a :hover {
 }
 .brighten:hover {
   -webkit-filter: brightness(100%);
-}
-#img-work-adopt {
-  max-width: 82%;
-  height: auto;
-  margin: 13px 0 10px -83px;
-  border-radius: 4px;
 }
 
 #img-portrait-icon {
@@ -445,7 +465,7 @@ a :hover {
   background-color: var(--heading-color);
 }
 .email-footer h4 {
-  color: var(--heading-color);
+  color: var(--secondary-color);
 }
 
 .work-inquiry {
@@ -457,7 +477,12 @@ a :hover {
   max-width: 100%;
 }
 
+/* /////////////////////// MEDIA QUERIES ///////////////////////// */
+
 @media (max-width: 915px) {
+  div.container {
+    margin-right: 10px !important;
+  }
   header {
     padding: 40px !important;
     background-color: var(--branding-color);
@@ -469,12 +494,15 @@ a :hover {
   header h3 {
     font-size: 19px;
   }
+
   h3 {
-    font-size: 17px;
+    font-size: 18px;
+    margin: 1rem !important;
   }
+
   h4 {
-    margin-top: -15px;
     font-size: 20px;
+    margin-top: -30px;
   }
   h5 {
     font-family: var(--primary-font);
@@ -507,11 +535,7 @@ a :hover {
     text-align: center !important;
     padding: 40px 0 25px 0;
   }
-  .luiza {
-    max-width: 35%;
-    height: auto;
-    text-align: center;
-  }
+
   .hero p {
     font-size: 20px;
   }
@@ -632,26 +656,49 @@ a :hover {
     margin: -47px 0px 50px 0px;
     border-radius: 4px;
   }
-  #img-work-weather {
-    max-width: 82%;
+
+  .img-work-weather {
+    width: 70%;
     height: auto;
-    margin: -15px 0 28px;
+    margin: 30px 0 0px;
     border-radius: 4px;
   }
 
-  #img-work-adopt {
-    max-width: 82%;
+  .img-work-bishkek {
+    max-width: 70%;
     height: auto;
-    margin: 30px 0 28px;
+    margin: -10px 0 28px;
     border-radius: 4px;
   }
+
+  .img-work-adopt {
+    max-width: 70%;
+    height: auto;
+    margin: 20px 0 0px;
+    border-radius: 4px;
+  }
+
+  .skills__skill {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 10px;
+  }
+
   #email-contact {
     font-size: 10px !important;
   }
   .email-footer h4 {
     margin-top: 5px !important;
   }
+
+  .about__content-title {
+    font-size: 20px;
+    margin: 10px 0 30px;
+  }
+
   .work-inquiry {
+    padding: 3rem;
     border-radius: 7px;
   }
 }

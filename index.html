@@ -14,7 +14,11 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
       rel="stylesheet"
+      <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
     />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -86,9 +90,86 @@
       </div>
     </div>
 
-    <div class="zero-project mb-5">
-      <h3 class="text-center mt-5 mb-5">Featured Projects:</h3>
-      <div class="row">
+    <h3 class="text-center mt-5 mb-5">Featured Projects:</h3>
+    <div class="content-container container-fluid space-content-evenly\">
+      <div class="content">
+        <div class="row">
+          <div class="col-lg text-center">
+            <a href="https://bishkek-city.netlify.app/ " target="_blank">
+              <img
+                src="/images/Bishkek-City-Homepage.png"
+                alt="Luiza's Bishkek-city Homepage"
+                class="img-fluid mb-1 brighten img-work-bishkek"
+                id="img-project"
+              />
+            </a>
+            <h4>My Hometown Website</h4>
+            <p class="text-muted">Built with HTML, CSS, Bootstrap</p>
+            <div class="launch-me mt-4">
+              <a
+                href="https://bishkek-city.netlify.app/"
+                title="Launch Bishkek Homepage"
+                class="btn btn-branding"
+                id="btn-launch-project"
+                target="_blank"
+                >Launch</a
+              >
+            </div>
+          </div>
+          <div class="col-lg text-center">
+            <a
+              href="https://nostalgic-tesla-417c1a.netlify.app/"
+              target="_blank"
+            >
+              <img
+                src="/images/Weather-App.png"
+                alt="Luiza's Weather App"
+                class="img-fluid brighten img-work-weather"
+                id="img-project"
+              />
+            </a>
+            <h4>Weather App</h4>
+            <p class="text-muted">
+              Built with HTML, CSS, JavaScript, Bootstrap
+            </p>
+            <div class="launch-me mt-4">
+              <a
+                href="https://nostalgic-tesla-417c1a.netlify.app/"
+                title="Launch Weather App"
+                class="btn btn-branding"
+                id="btn-launch-project"
+                target="_blank"
+                >Launch</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg text-center">
+            <a href="https://cranky-ride-af1a5b.netlify.app/" target="_blank">
+              <img
+                src="/images/Adopt-dont-shop-website.png"
+                alt="Luiza's Adopt Don't Shop Website"
+                class="img-fluid brighten img-work-adopt"
+                id="img-project"
+              />
+            </a>
+            <h4>Adopt Don't Shop Website</h4>
+            <p class="text-muted">Built with HTML, CSS, JavaScript</p>
+            <div class="launch-me mt-4">
+              <a
+                href="https://cranky-ride-af1a5b.netlify.app/"
+                title="Launch website"
+                class="btn btn-branding"
+                id="btn-launch-project"
+                target="_blank"
+                >Launch</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="row">
         <div class="col-sm text-center">
           <img
             src="/images/Bishkek-City-Homepage.png"
@@ -114,10 +195,9 @@
             >
           </div>
         </div>
-      </div>
-    </div>
+      </div> -->
 
-    <div class="first-project mb-5 mt-5">
+      <!-- <div class="first-project mb-5 mt-5">
       <div class="row">
         <div class="col-sm weather-margin">
           <h2 class="mt-5 mb-2">Weather App</h2>
@@ -174,51 +254,67 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="flex text-center mt-5 mb-5 d-none d-sm-block">
-      <div class="work-inquiry">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <h5>Work Inquiry</h5>
-            </div>
+      <div class="flex text-center mt-5 mb-5 d-none d-sm-block">
+        <div class="work-inquiry">
+          <div class="container">
+            <div class="row">
+              <div class="about__content-skills">
+                <h6 class="about__content-title">My Skills:</h6>
+                <div class="skills justify-content-center">
+                  <div class="skills__skill">HTML</div>
+                  <div class="skills__skill">CSS</div>
+                  <div class="skills__skill">JavaScript</div>
+                  <div class="skills__skill">React</div>
+                  <div class="skills__skill">SASS</div>
+                  <div class="skills__skill">GitHub</div>
+                  <div class="skills__skill">Bootstrap</div>
+                  <div class="skills__skill">VS Code</div>
+                  <div class="skills__skill">Node.js</div>
+                  <div class="skills__skill">Canva</div>
+                  <div class="skills__skill">Figma</div>
+                  <div class="skills__skill">InDesign</div>
+                  <div class="skills__skill">Illustrator</div>
+                </div>
+              </div>
 
-            <div class="col-md-6">
-              <a
-                href="/contact.html"
-                class="btn btn-branding"
-                id="btn-work-inquiry"
-                >Contact me</a
-              >
+              <!-- <div class="col-md-6">
+                <a
+                  href="/contact.html"
+                  class="btn btn-branding"
+                  id="btn-work-inquiry"
+                  >Contact me</a
+                >
+              </div> -->
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="email-footer text-center justify-content-center">
-      <h4 class="mt-5 mb-3">Let's get in touch!</h4>
+      <div class="email-footer text-center justify-content-center">
+        <h4 class="mt-5 mb-3">Let's get in touch!</h4>
 
-      <p id="email-contact">
-        <a href="mailto:luiza.moshkin@gmail.com">luiza.moshkin@gmail.com</a>
-      </p>
-    </div>
+        <p id="email-contact">
+          <a href="mailto:luiza.moshkin@gmail.com">luiza.moshkin@gmail.com</a>
+        </p>
+      </div>
 
-    <div class="social-links-footer d-flex justify-content-center mt-5">
-      <a href="https://github.com/la-viza" target="_blank"
-        ><i class="fab fa-github" id="footer-icons"></i
-      ></a>
+      <div class="social-links-footer d-flex justify-content-center mt-5">
+        <a href="https://github.com/la-viza" target="_blank"
+          ><i class="fab fa-github" id="footer-icons"></i
+        ></a>
 
-      <a
-        href="https://www.linkedin.com/in/luiza-moshkin-3024b9229/"
-        target="_blank"
-        ><i class="fab fa-linkedin-in" id="footer-icons"></i
-      ></a>
+        <a
+          href="https://www.linkedin.com/in/luiza-moshkin-3024b9229/"
+          target="_blank"
+          ><i class="fab fa-linkedin-in" id="footer-icons"></i
+        ></a>
 
-      <a href=" https://www.instagram.com/la_viza/" target="_blank"
-        ><i class="fab fa-instagram" id="footer-icons"></i
-      ></a>
+        <a href=" https://www.instagram.com/la_viza/" target="_blank"
+          ><i class="fab fa-instagram" id="footer-icons"></i
+        ></a>
+      </div>
     </div>
     <footer class="footer mt-3 mb-3 text-center">
       This project was coded by Lu:za Moshk:n and is
