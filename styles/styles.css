@@ -180,18 +180,6 @@ h2 .typing {
   }
 }
 
-.luiza {
-  width: 400px;
-  height: auto;
-  transition: 1s ease;
-}
-.luiza:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  transition: 1s ease;
-}
-
 .first-project {
   text-align: left;
   margin: auto;
@@ -234,14 +222,29 @@ a :hover {
   color: var(--secondary-color);
 }
 
+#btn-projects,
 #btn-contact-me {
-  background-color: #fe4a53;
-  color: var(--branding-color);
-  opacity: 90%;
-  font-size: 18px;
-  padding: 15px 30px;
-  outline-color: #fe4a53;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 7px;
+  background-color: transparent;
+  color: var(--heading-color);
+  border: solid 1.5px #ef00e3a8;
+  transition: all 100ms ease-in-out;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
 }
+
+#btn-projects:hover,
+#btn-contact-me:hover {
+  border: 1px solid #ef00e3a8;
+  box-shadow: 0 0 5px #ef00e3a8, 0 0 5px #ef00e3a8 inset;
+  color: var(--contact-links-color);
+}
+
 #btn-contact-me-about {
   background-color: var(--contact-btn-color);
   color: var(--branding-color);
@@ -251,7 +254,6 @@ a :hover {
   padding: 15px 15px;
 }
 
-#btn-contact-me:hover,
 #btn-contact-me-about:hover {
   border: solid 1px var(--branding-color);
   opacity: 100%;
@@ -523,6 +525,7 @@ a :hover {
     margin-top: -10px;
   }
   #btn-contact-me,
+  #btn-projects,
   #btn-contact-me-about {
     margin-top: -30px;
     font-size: 10px;
