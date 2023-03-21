@@ -437,9 +437,14 @@ a :hover {
   text-align: center;
   justify-content: center;
   padding-top: 80px;
-  color: var(--heading-color);
-  border-color: var(--heading-color) !important;
+  /* border: 1px solid #ef00e3a8;
+  box-shadow: 0 0 5px #ef00e3a8, 0 0 5px #ef00e3a8 inset; */
 }
+
+.contact-page-heading {
+  color: var(--secondary-color);
+}
+
 #email-contact a {
   color: var(--contact-links-color);
   display: flex;
@@ -468,6 +473,13 @@ a :hover {
   color: var(--secondary-color);
 }
 
+.contact-icons {
+  color: var(--branding-color);
+}
+
+.contact-icons:hover {
+  color: #ef00e3a8;
+}
 .work-inquiry {
   display: block;
   margin: 0;
