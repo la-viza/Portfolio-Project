@@ -280,9 +280,9 @@ a :hover {
 }
 
 #btn-contact-me-about {
-  background-color: var(--contact-btn-color);
-  color: var(--branding-color);
-  border-color: var(--contact-btn-color);
+  background-color: var(--branding-color);
+  color: var(--heading-color);
+  border-color: var(--branding-color);
   opacity: 95%;
   font-size: 16px;
   padding: 15px 15px;
@@ -349,7 +349,7 @@ a :hover {
 
 #img-project {
   max-width: 87%;
-  height: 66%;
+  height: 65%;
   border-radius: 4px;
 }
 
@@ -377,9 +377,9 @@ a :hover {
   padding: 0 50px 0 100px;
 }
 #btn-work-inquiry {
-  background-color: var(--contact-btn-color);
-  color: var(--branding-color);
-  border-color: var(--contact-btn-color);
+  background-color: transparent;
+  color: var(--contact-links-color);
+  border-color: var(--contact-links-color);
   opacity: 85%;
   font-size: 16px;
   border: 12px 30px !important;
