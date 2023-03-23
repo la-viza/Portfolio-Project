@@ -337,10 +337,16 @@ a :hover {
   opacity: 100%;
 }
 
+.card-project {
+  width: 90%;
+  margin-right: 0px !important;
+  margin-bottom: 4rem;
+}
+
 #img-bishkek-app {
   max-width: 77%;
   height: 103%;
-  margin: 8px 90px 28px;
+  margin: 8px 40px 28px;
   border-radius: 4px;
 }
 
@@ -365,6 +371,10 @@ a :hover {
 
 #img-project:hover {
   box-shadow: 0px 0px 15px #ef00e3a8;
+}
+
+#header-work {
+  color: var(--branding-color);
 }
 
 .weather-margin {
@@ -457,6 +467,10 @@ a :hover {
   padding-top: 80px;
   /* border: 1px solid #ef00e3a8;
   box-shadow: 0 0 5px #ef00e3a8, 0 0 5px #ef00e3a8 inset; */
+}
+
+.work-padding {
+  padding-right: 10px;
 }
 
 .contact-page-heading {
