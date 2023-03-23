@@ -171,7 +171,7 @@ h2 .typing {
 }
 
 .four h2 {
-  width: 36ch;
+  width: 37ch;
   border-right: 4px solid black;
   margin: 2rem auto;
   white-space: nowrap;
@@ -412,7 +412,7 @@ a :hover {
 }
 
 #btn-work-inquiry:hover {
-  border: solid 1px var(--branding-color);
+  border: solid 1px var(--heading-color);
   opacity: 100%;
   transition: all 100ms ease-in-out;
 }
