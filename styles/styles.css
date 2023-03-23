@@ -10,9 +10,9 @@
   --contact-links-color: #ac7088;
   --nav-links-color: #440043;
 }
-/* body {
-  background-color: #404040;
-} */
+body {
+  background-color: #faf5ff;
+}
 header {
   padding: 65px !important;
   background-color: var(--branding-color);
@@ -51,17 +51,18 @@ h2 {
 }
 
 h4 {
-  font-family: var(--heading-font);
+  font-family: var(--primary-font);
   color: var(--secondary-color);
-  font-size: 25px;
-  font-weight: normal;
+  font-size: 18px;
+  font-weight: 500;
   margin-top: 15px;
+  text-transform: uppercase;
 }
 h5 {
   font-family: var(--primary-font);
   font-size: 30px;
   color: var(--heading-color);
-  margin: 7px 0 0 70px;
+  margin: 7px 0 0;
 }
 
 h6 {
@@ -215,8 +216,14 @@ h2 .typing {
   color: var(--contact-links-color) !important;
 }
 
-.project-cards {
+#weather-app-p {
+  font-size: 14px;
+}
+
+.card-project-main {
   justify-content: space-around;
+  margin-bottom: 5rem;
+  max-height: 80%;
 }
 
 .contact-icons {
@@ -289,9 +296,9 @@ a :hover {
 }
 
 #btn-contact-me-about:hover {
-  border: solid 1px var(--branding-color);
-  opacity: 100%;
-  transition: all 100ms ease-in-out;
+  border: 1px solid #ef00e3a8;
+  box-shadow: 0 0 5px #ef00e3a8, 0 0 5px #ef00e3a8 inset;
+  color: var(--contact-links-color);
 }
 
 #btn-weather-app,
@@ -311,20 +318,23 @@ a :hover {
 }
 
 #btn-launch-project {
-  background-color: var(--branding-color);
-  color: var(--heading-color);
-  border-color: var(--branding-color);
-  opacity: 85%;
+  background-color: #e5d4f7;
+  color: var(--nav-links-color);
+  transition: all 100ms ease-in-out;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  opacity: 60%;
   font-size: 14px;
   padding: 0.7rem 3rem;
   text-transform: uppercase;
 }
 
 #btn-launch-project:hover {
-  border: solid 1px var(--branding-color);
-  opacity: 95%;
-  transition: all 100ms ease-in-out;
-  color: #ef00e3a8;
+  border: 1px solid #ef00e3a8;
+  box-shadow: 0 0 5px #ef00e3a8, 0 0 5px #ef00e3a8 inset;
+  color: var(--secondary-color);
+  opacity: 100%;
 }
 
 #img-bishkek-app {
@@ -351,6 +361,10 @@ a :hover {
   max-width: 87%;
   height: 65%;
   border-radius: 4px;
+}
+
+#img-project:hover {
+  box-shadow: 0px 0px 15px #ef00e3a8;
 }
 
 .weather-margin {
@@ -410,8 +424,12 @@ a :hover {
 .contact-container h1 {
   font-size: 50px;
 }
+
+#my-story-heading {
+  color: var(--branding-color);
+}
 .about-me {
-  padding-left: 100px;
+  padding-left: 25px;
 }
 .about-me-image {
   max-width: 70%;
@@ -520,7 +538,7 @@ a :hover {
     font-family: var(--primary-font);
     font-size: 20px;
     color: var(--heading-color);
-    margin: 14px;
+    margin: 14px 0px 14px -63px;
   }
   h6 {
     font-size: 12px;
@@ -598,6 +616,11 @@ a :hover {
   }
   .find-me {
     margin-top: 15px !important;
+  }
+
+  .card-project-main {
+    justify-content: space-around;
+    margin-top: 0rem !important;
   }
   #adopt-section {
     padding: 0 !important;
@@ -688,6 +711,11 @@ a :hover {
     height: auto;
     margin: 20px 0 0px;
     border-radius: 4px;
+  }
+
+  div .col-lg-3 {
+    height: 20%;
+    margin-bottom: 2rem !important;
   }
 
   .skills__skill {
